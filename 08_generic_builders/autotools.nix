@@ -11,10 +11,11 @@ let
       coreutils
       gawk
       gnused
+    ];
+    buildInputs = with pkgs; [
       gnugrep
       binutils.bintools
     ];
-    buildInputs = [ ];
     system = builtins.currentSystem;
   };
 in
